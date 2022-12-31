@@ -31,17 +31,18 @@ export default function Profile({
           <span className="label">Likes</span>
           <span className="quantity">{userLikes}</span>
         </li>
+        .isRequired
       </ul>
     </div>
   );
 }
 
 Profile.propTypes = {
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  avatarUrl: PropTypes.string,
-  userFollowers: PropTypes.number,
-  userviews: PropTypes.number,
-  userLikes: PropTypes.number,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatarUrl: PropTypes.string.isRequired,
+  userFollowers: PropTypes.number.isRequired,
+  userviews: PropTypes.number.isRequired,
+  userLikes: PropTypes.number.isRequired,
 };
