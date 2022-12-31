@@ -1,4 +1,4 @@
-import Profile from './components/Profile/Profile.js'
+import Profile from './Profile/Profile'
 import user from './user.json';
 
 export default function App() {
@@ -8,8 +8,10 @@ export default function App() {
       username={user.username}
       tag={user.tag}
       location={user.location}
-      avatar={user.avatar}
-      stats={user.stats}
+      avatarUrl={user.avatar}
+      userFollowers={user.stats.followers}
+      userviews={user.stats.views}
+      userLikes={user.stats.likes}
     />
     </div>
   );
