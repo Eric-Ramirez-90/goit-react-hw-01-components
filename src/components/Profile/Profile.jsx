@@ -30,8 +30,7 @@ export default function Profile({
         <li>
           <span className="label">Likes</span>
           <span className="quantity">{userLikes}</span>
-        </li>
-        .isRequired
+        </li> 
       </ul>
     </div>
   );
