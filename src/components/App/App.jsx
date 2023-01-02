@@ -1,9 +1,13 @@
-import Profile from '../Profile/Profile';
-import user from '../user.json';
+import {Section} from '../Section/Section';
+import { Profile } from '../Profile/Profile';
+import { Statistics } from '../Statistics/Statistics'
+import{FriendList } from '../FriendList/FriendList'
+import { user, transactions, friends, data } from '../../data/index';
 
 export default function App() {
   return (
-    <div>
+    <>
+      <Section>
       <Profile
       username={user.username}
       tag={user.tag}
@@ -13,6 +17,15 @@ export default function App() {
       userviews={user.stats.views}
       userLikes={user.stats.likes}
         />
-    </div>
+      </Section> 
+      
+      <Section title="Upload stats">
+        <Statistics stats={data} />
+      </Section>
+
+      <Section>
+      </Section>
+      
+    </>
   );
 };

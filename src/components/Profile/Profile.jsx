@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function Profile({
+export function Profile({
   username,
   tag,
   location,
@@ -45,3 +45,4 @@ Profile.propTypes = {
   userviews: PropTypes.number.isRequired,
   userLikes: PropTypes.number.isRequired,
 };
+
