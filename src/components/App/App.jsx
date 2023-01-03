@@ -2,6 +2,7 @@ import {Section} from '../Section/Section';
 import { Profile } from '../Profile/Profile';
 import { Statistics } from '../Statistics/Statistics'
 import{FriendList } from '../FriendList/FriendList'
+import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 import { user, transactions, friends, data } from '../../data/index';
 
 export default function App() {
@@ -24,6 +25,11 @@ export default function App() {
       </Section>
 
       <Section>
+        <FriendList friends={friends} />
+      </Section>
+      
+      <Section>
+        <TransactionHistory items={transactions} />
       </Section>
       
     </>
