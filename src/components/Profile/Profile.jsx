@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Wrapper } from './Profile.styled';
 
 export function Profile({
   username,
@@ -10,7 +11,7 @@ export function Profile({
   userLikes,
 }) {
   return (
-    <div className="profile">
+    <Wrapper>
       <div className="description">
         <img src={avatarUrl} alt="User avatar" className="avatar" />
         <p className="name">{username}</p>
@@ -30,9 +31,9 @@ export function Profile({
         <li>
           <span className="label">Likes</span>
           <span className="quantity">{userLikes}</span>
-        </li> 
+        </li>
       </ul>
-    </div>
+    </Wrapper>
   );
 }
 
@@ -45,4 +46,3 @@ Profile.propTypes = {
   userviews: PropTypes.number.isRequired,
   userLikes: PropTypes.number.isRequired,
 };
-

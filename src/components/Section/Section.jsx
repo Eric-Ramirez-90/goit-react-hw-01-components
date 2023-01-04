@@ -1,13 +1,16 @@
 import PropTypes from 'prop-types';
+import { Wrapper, Title } from './Section.styled';
 
-export function Section({title, children}) {
-    return <section>
-        {title && <h2>{title}</h2>}
-        {children}
-    </section>
+export function Section({ title, children }) {
+  return (
+    <Wrapper>
+      {title && <Title>{title}</Title>}
+      {children}
+    </Wrapper>
+  );
 }
 
 Section.prototype = {
-    title: PropTypes.string, 
-    children: PropTypes.node,
-}
+  title: PropTypes.string,
+  children: PropTypes.node,
+};
