@@ -1,5 +1,13 @@
 import PropTypes from 'prop-types';
-import { Wrapper } from './Profile.styled';
+import {
+  Frame,
+  Image,
+  ProfName,
+  ProfInfo,
+  DescContainer,
+  StatsInfo,
+  StatsItem,
+} from './Profile.styled';
 
 export function Profile({
   username,
@@ -11,29 +19,29 @@ export function Profile({
   userLikes,
 }) {
   return (
-    <Wrapper>
-      <div className="description">
-        <img src={avatarUrl} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <Frame>
+      <DescContainer>
+        <Image src={avatarUrl} alt="User avatar" className="avatar" />
+        <ProfName>{username}</ProfName>
+        <ProfInfo>{tag}</ProfInfo>
+        <ProfInfo>{location}</ProfInfo>
+      </DescContainer>
 
-      <ul className="stats">
-        <li>
+      <StatsInfo>
+        <StatsItem>
           <span className="label">Followers</span>
           <span className="quantity">{userFollowers}</span>
-        </li>
-        <li>
+        </StatsItem>
+        <StatsItem>
           <span className="label">Views</span>
           <span className="quantity">{userviews}</span>
-        </li>
-        <li>
+        </StatsItem>
+        <StatsItem>
           <span className="label">Likes</span>
           <span className="quantity">{userLikes}</span>
-        </li>
-      </ul>
-    </Wrapper>
+        </StatsItem>
+      </StatsInfo>
+    </Frame>
   );
 }
 
