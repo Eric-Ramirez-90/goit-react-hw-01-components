@@ -7,6 +7,8 @@ import {
   DescContainer,
   StatsInfo,
   StatsItem,
+  Label,
+  Quantity,
 } from './Profile.styled';
 
 export function Profile({
@@ -21,7 +23,7 @@ export function Profile({
   return (
     <Frame>
       <DescContainer>
-        <Image src={avatarUrl} alt="User avatar" className="avatar" />
+        <Image src={avatarUrl} alt={username} />
         <ProfName>{username}</ProfName>
         <ProfInfo>{tag}</ProfInfo>
         <ProfInfo>{location}</ProfInfo>
@@ -29,16 +31,16 @@ export function Profile({
 
       <StatsInfo>
         <StatsItem>
-          <span className="label">Followers</span>
-          <span className="quantity">{userFollowers}</span>
+          <Label>Followers</Label>
+          <Quantity>{userFollowers}</Quantity>
         </StatsItem>
         <StatsItem>
-          <span className="label">Views</span>
-          <span className="quantity">{userviews}</span>
+          <Label>Views</Label>
+          <Quantity>{userviews}</Quantity>
         </StatsItem>
         <StatsItem>
-          <span className="label">Likes</span>
-          <span className="quantity">{userLikes}</span>
+          <Label>Likes</Label>
+          <Quantity>{userLikes}</Quantity>
         </StatsItem>
       </StatsInfo>
     </Frame>
