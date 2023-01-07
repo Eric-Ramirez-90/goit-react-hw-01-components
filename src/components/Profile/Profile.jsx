@@ -25,7 +25,7 @@ export function Profile({
       <DescContainer>
         <Image src={avatarUrl} alt={username} />
         <ProfName>{username}</ProfName>
-        <ProfInfo>{tag}</ProfInfo>
+        <ProfInfo>@{tag}</ProfInfo>
         <ProfInfo>{location}</ProfInfo>
       </DescContainer>
 

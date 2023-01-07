@@ -36,7 +36,6 @@ export const ProfInfo = styled.p`
 
 export const StatsInfo = styled.ul`
   display: flex;
-  justify-content: space-between;
 `;
 
 export const StatsItem = styled.li`
@@ -46,13 +45,13 @@ export const StatsItem = styled.li`
   flex-direction: column;
   gap: 10px;
 
-  padding: 15px;
+  padding: 10px;
   width: 100%;
   background: #e5e5f5;
   border: 1px solid #d5d5f8;
 `;
 export const Label = styled.span`
-  font-size: 14px;
+  font-size: 16px;
 `;
 
 export const Quantity = styled.span`

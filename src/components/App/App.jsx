@@ -26,7 +26,7 @@ export default function App() {
         <FriendList friends={friends} />
       </Section>
 
-      <Section>
+      <Section title="Transactions Table">
         <TransactionHistory items={transactions} />
       </Section>
     </>
