@@ -6,6 +6,7 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled.h2`
-  display: block;
   text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 `;

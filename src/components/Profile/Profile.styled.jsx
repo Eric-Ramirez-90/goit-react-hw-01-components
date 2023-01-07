@@ -2,11 +2,12 @@ import styled from '@emotion/styled';
 
 export const Frame = styled.div`
   max-width: 250px;
-  margin: 150px auto 0;
+  margin: 0 auto;
   box-shadow: 0 10px 90px #00000024;
   text-align: center;
   font-size: 20px;
   border-radius: 15px;
+  overflow: hidden;
 `;
 
 export const DescContainer = styled.div`
@@ -36,7 +37,6 @@ export const ProfInfo = styled.p`
 export const StatsInfo = styled.ul`
   display: flex;
   justify-content: space-between;
-  border-bottom-left-radius: 4px;
 `;
 
 export const StatsItem = styled.li`
@@ -46,11 +46,10 @@ export const StatsItem = styled.li`
   flex-direction: column;
   gap: 10px;
 
-  padding: 5px;
+  padding: 15px;
   width: 100%;
-  height: 100px;
   background: #e5e5f5;
-  border: 1px #d5d5f8 solid;
+  border: 1px solid #d5d5f8;
 `;
 export const Label = styled.span`
   font-size: 14px;
