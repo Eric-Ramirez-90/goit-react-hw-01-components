@@ -23,4 +23,5 @@ export const TableHead = styled.thead`
 export const TableTitle = styled.th`
   padding: 10px;
   border: 1px solid #d1d1d1;
+  text-transform: uppercase;
 `;
